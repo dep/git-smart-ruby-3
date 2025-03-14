@@ -29,7 +29,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "git-smart #{version}"
+  rdoc.title = "git-smart-ruby-3 #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
@@ -46,7 +46,7 @@ task :release => :rocco
 desc "Generate a binary for each of our commands"
 task :generate_binaries do
   base_dir = File.dirname(__FILE__)
-  require "#{base_dir}/lib/git-smart"
+  require "#{base_dir}/lib/git-smart-ruby-3"
 
   require 'fileutils'
   FileUtils.mkdir_p "#{base_dir}/bin"
@@ -57,7 +57,7 @@ task :generate_binaries do
 
 $:.unshift(File.join(File.expand_path(File.dirname(__FILE__)), '..', 'lib'))
 
-require 'git-smart'
+require 'git-smart-ruby-3'
 
 GitSmart.run('#{cmd}', ARGV)
 }

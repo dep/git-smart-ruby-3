@@ -1,4 +1,4 @@
-# git-smart
+# git-smart-ruby-3
 
 ![git-smart logo](https://github.com/geelen/git-smart/raw/master/docs/images/git-smart.png)
 
@@ -12,7 +12,7 @@ Adds some additional git commands to add some smarts to your workflow. These com
 
 All you need to do is grab the gem:
 
-    gem install git-smart
+    gem install git-smart-ruby-3
 
 This will add an executable for each command, e.g. `git-smart-pull`. You call them using git's simple syntax for [custom commands](http://www.nullstyle.com/2007/06/22/create-custom-commands-in-git/), e.g. `git smart-pull`. They'll be removed when you uninstall the gem.
 
@@ -52,7 +52,7 @@ Details here: [smart-log](http://github-displayer.heroku.com/geelen/git-smart/ra
 
 Recommended alias to use: `gl`
 
-## Contributing to git-smart
+## Contributing to git-smart-ruby-3
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it

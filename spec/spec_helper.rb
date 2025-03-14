@@ -1,7 +1,7 @@
 require 'rspec'
 require 'tmpdir'
 
-require File.dirname(__FILE__) + '/../lib/git-smart'
+require File.dirname(__FILE__) + '/../lib/git-smart-ruby-3'
 
 WORKING_DIR = File.dirname(__FILE__) + '/working'
 
